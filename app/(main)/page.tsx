@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Instagram, Facebook } from 'lucide-react';
+import Image from 'next/image';
 
 const PhotographyPortfolio = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -53,8 +54,8 @@ const PhotographyPortfolio = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-lg py-2' : 'bg-white/95 backdrop-blur-sm shadow-sm py-3'
+      <header className={`w-full top-0 z-50 transition-all duration-300 absolute bg-transparent ${
+        scrolled ? 'bg-white shadow-lg py-2 fixed' : 'bg-white/95 backdrop-blur-sm shadow-sm py-3'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
@@ -118,13 +119,16 @@ const PhotographyPortfolio = () => {
 
       {/* Hero Section */}
       <section className="relative h-screen mt-16 sm:mt-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent z-10"></div>
-        <img
-          src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1920&h=1080&fit=crop"
-          alt="Hero"
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 flex items-center z-20">
+        <div className="absolute inset-0  z-10"></div>
+        <Image  
+            src="/assets/images/skate-man.jpeg" 
+            alt="Hero" 
+            width={1920}
+            height={1080}
+            priority
+            className="w-full h-full object-cover object-center"  />
+       
+        {/* <div className="absolute inset-0 flex items-center z-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <div className="max-w-2xl">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif text-gray-900 mb-3 sm:mb-4 leading-tight">
@@ -135,7 +139,7 @@ const PhotographyPortfolio = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Quote Section */}
