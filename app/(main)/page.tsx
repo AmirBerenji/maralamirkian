@@ -55,20 +55,23 @@ const PhotographyPortfolio = () => {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className={`w-full top-0 z-50 transition-all duration-300 absolute bg-transparent ${
-        scrolled ? ' shadow-lg py-2 fixed' : ' backdrop-blur-sm  py-5'
+        scrolled ? ' shadow-lg py-2 fixed' : 'py-5'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
               <div className="flex items-center space-x-2 sm:space-x-3">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-black rounded-full flex items-center justify-center flex-shrink-0">
-                  <span className="text-white font-serif text-lg sm:text-xl">M</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-sm sm:text-base lg:text-lg font-serif tracking-wide">MARAL AMIRKIAN</span>
-                  <span className="text-xs text-gray-600 tracking-widest hidden sm:block">PHOTOGRAPHY STUDIO</span>
-                </div>
+               <Image
+                  src="/assets/images/logo.png"
+                  alt="Hero" 
+                  width={1920}
+                  height={1080}
+                  priority
+                  className=" w-24 md:w-36 lg:w-36 -mt-2 object-cover object-center" >
+                  
+                </Image>
+                
               </div>
             </div>
 
