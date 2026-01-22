@@ -20,25 +20,25 @@ const PhotographyPortfolio = () => {
     {
       id: 'street',
       title: 'Street Photography',
-      image: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=800&h=600&fit=crop',
+      image: '/assets/images/street-photograpy.jpeg',
       description: 'Capturing life in motion'
     },
     {
       id: 'properties',
       title: 'Properties',
-      image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop',
+      image: '/assets/images/property.jpg',
       description: 'Architecture and interiors'
     },
     {
       id: 'product',
       title: 'Product',
-      image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800&h=600&fit=crop',
+      image: '/assets/images/product.jpeg',
       description: 'Commercial photography'
     },
     {
       id: 'ads',
       title: 'Ads And Events',
-      image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&h=600&fit=crop',
+      image: '/assets/images/ads.jpeg',
       description: 'Professional coverage'
     }
   ];
@@ -55,7 +55,7 @@ const PhotographyPortfolio = () => {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className={`w-full top-0 z-50 transition-all duration-300 absolute bg-transparent ${
-        scrolled ? 'bg-white shadow-lg py-2 fixed' : 'bg-white/95 backdrop-blur-sm shadow-sm py-3'
+        scrolled ? ' shadow-lg py-2 fixed' : ' backdrop-blur-sm  py-5'
       }`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
@@ -145,10 +145,10 @@ const PhotographyPortfolio = () => {
       {/* Quote Section */}
       <section className="bg-stone-100 py-12 sm:py-16 md:py-20 lg:py-24 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-gray-800 leading-relaxed mb-4 sm:mb-6">
+          <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-serif text-[#5A4B2E] leading-relaxed mb-4 sm:mb-6">
             "THE BEST THING ABOUT A PICTURE IS THAT IT NEVER CHANGES, EVEN WHEN THE PEOPLE IN IT DO."
           </blockquote>
-          <cite className="text-base sm:text-lg md:text-xl text-gray-600 not-italic">Andy Warhol</cite>
+          <cite className="text-base sm:text-lg md:text-xl text-[#5A4B2E] not-italic">Andy Warhol</cite>
         </div>
       </section>
 
@@ -164,11 +164,16 @@ const PhotographyPortfolio = () => {
                 onMouseLeave={() => typeof window !== 'undefined' && window.innerWidth >= 768 && setActiveCategory(null)}
                 onClick={() => handleCategoryClick(category.id)}
               >
-                <img
-                  src={category.image}
-                  alt={category.title}
+                <Image
+                 alt={category.title} 
+            width={1920}
+            height={1080}
+            priority
+            src={category.image}
+                 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-active:scale-105"
-                />
+                ></Image>
+               
                 <div className={`absolute inset-0 transition-all duration-500 ${
                   activeCategory === category.id ? 'bg-black/60' : 'bg-black/40'
                 }`}></div>
@@ -196,7 +201,7 @@ const PhotographyPortfolio = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-stone-800 text-white py-8 sm:py-10 md:py-12 px-4 sm:px-6">
+      <footer className="bg-[#5A4B2E] text-white py-8 sm:py-10 md:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex items-center space-x-4">
@@ -219,7 +224,7 @@ const PhotographyPortfolio = () => {
                 <Facebook size={20} />
               </a>
             </div>
-            <p className="text-xs sm:text-sm text-gray-400 text-center sm:text-right">
+            <p className="text-xs sm:text-sm text-gray-100 text-center sm:text-right">
               Copyright © 2026 Maral Amirkian | Powered by Amir Barenzi
             </p>
           </div>
