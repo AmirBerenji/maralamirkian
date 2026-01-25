@@ -1,4 +1,4 @@
-
+import Navbar from "./components/navbar";
 
 export default function RootLayout({
   children,
@@ -6,10 +6,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    
-        <>
-            {children}
-        </>
-      
+    <>
+      <div className="min-h-screen bg-white">
+        {/* Header */}
+        <Navbar />
+
+        {children}
+      </div>
+    </>
   );
 }
