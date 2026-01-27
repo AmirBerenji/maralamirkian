@@ -4,16 +4,18 @@ import MasonryGallery from "../components/masonarygallery";
 
 export default function ProductPhotography() {
   const [images, setImages] = useState(() => [
-    "/assets/images/product.jpeg",
-    "/assets/images/ads.jpeg",
-    "/assets/images/joker.jpeg",
-    "/assets/images/property.jpg",
-    "/assets/images/skate-man.jpeg",
-    "/assets/images/product.jpeg",
-    "/assets/images/ads.jpeg",
-    "/assets/images/joker.jpeg",
-    "/assets/images/property.jpg",
-    "/assets/images/skate-man.jpeg",
+   "/assets/images/street-photography/street-photography (1)",
+"/assets/images/street-photography/street-photography (2)",
+"/assets/images/street-photography/street-photography (3)",
+"/assets/images/street-photography/street-photography (4)",
+"/assets/images/street-photography/street-photography (5)",
+"/assets/images/street-photography/street-photography (6)",
+"/assets/images/street-photography/street-photography (4)",
+"/assets/images/street-photography/street-photography (8)",
+"/assets/images/street-photography/street-photography (9)",
+"/assets/images/street-photography/street-photography (10)",
+"/assets/images/street-photography/street-photography (11)",
+"/assets/images/street-photography/street-photography (12)",
   ]);
 
   return (
