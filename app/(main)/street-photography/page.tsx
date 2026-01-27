@@ -10,7 +10,6 @@ export default function StreetPhotography() {
 "/assets/images/street-photography/street-photography (4).jpg",
 "/assets/images/street-photography/street-photography (5).jpg",
 "/assets/images/street-photography/street-photography (6).jpg",
-"/assets/images/street-photography/street-photography (4).jpg",
 "/assets/images/street-photography/street-photography (8).jpg",
 "/assets/images/street-photography/street-photography (9).jpg",
 "/assets/images/street-photography/street-photography (10).jpg",
