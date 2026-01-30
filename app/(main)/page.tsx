@@ -46,7 +46,7 @@ const PhotographyPortfolio = () => {
       <section className="relative h-screen ">
         <div className="absolute inset-0  z-10"></div>
         <Image
-          src="/assets/images/skate-man.jpg"
+          src="/assets/images/skate-man.jpeg"
           alt="Hero"
           width={1920}
           height={1080}
