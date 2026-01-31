@@ -39,6 +39,7 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex items-center">
               <div className="flex items-center space-x-2 sm:space-x-3">
+                <Link href="/">
                 <Image
                   src="/assets/images/logo.png"
                   alt="Logo"
@@ -47,6 +48,7 @@ export default function Navbar() {
                   priority
                   className=" w-24 md:w-36 lg:w-36 -mt-2 object-cover object-center"
                 ></Image>
+                </Link>
               </div>
             </div>
 

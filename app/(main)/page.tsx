@@ -1,8 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Menu, X, Instagram, Facebook } from "lucide-react";
+import { Menu, X, Instagram, Facebook, Link } from "lucide-react";
 import Image from "next/image";
 import Navbar from "./components/navbar";
+import { link } from "fs";
+import Links from "next/link";
 
 const PhotographyPortfolio = () => {
   const [activeCategory, setActiveCategory] = useState<string | null>(null);
@@ -13,24 +15,28 @@ const PhotographyPortfolio = () => {
       title: "Street Photography",
       image: "/assets/images/street-photograpy.jpeg",
       description: "Capturing life in motion",
+      link: "/street-photography",
     },
     {
       id: "properties",
       title: "Properties",
       image: "/assets/images/property.jpg",
       description: "Architecture and interiors",
+      link: "/properties",
     },
     {
       id: "product",
       title: "Product",
       image: "/assets/images/product.jpeg",
       description: "Commercial photography",
+      link: "/product-photography",
     },
     {
       id: "ads",
       title: "Ads And Events",
       image: "/assets/images/ads.jpeg",
       description: "Professional coverage",
+      link: "/ads-and-events",
     },
   ];
 
@@ -73,6 +79,7 @@ const PhotographyPortfolio = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             {categories.map((category) => (
+              <Links href={category.link}>
               <div
                 key={category.id}
                 className="group relative h-64 sm:h-80 md:h-96 overflow-hidden cursor-pointer touch-manipulation"
@@ -132,6 +139,7 @@ const PhotographyPortfolio = () => {
                   </button> */}
                 </div>
               </div>
+              </Links>
             ))}
           </div>
         </div>
