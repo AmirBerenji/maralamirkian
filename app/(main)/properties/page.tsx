@@ -19,6 +19,7 @@ export default function Properties() {
 "/assets/images/properties/properties (14).jpg",
 "/assets/images/properties/properties (15).jpg",
 "/assets/images/properties/properties (16).jpg",
+"/assets/images/properties/properties (17).jpg",
 "/assets/images/properties/properties (18).jpg",
 "/assets/images/properties/properties (19).jpg",
 "/assets/images/properties/properties (20).jpg",
@@ -28,6 +29,7 @@ export default function Properties() {
 "/assets/images/properties/properties (24).jpg",
 "/assets/images/properties/properties (25).jpg",
 "/assets/images/properties/properties (26).jpg",
+"/assets/images/properties/properties (27).jpg",
 "/assets/images/properties/properties (28).jpg",
 "/assets/images/properties/properties (29).jpg",
 "/assets/images/properties/properties (30).jpg",
@@ -37,6 +39,7 @@ export default function Properties() {
 "/assets/images/properties/properties (34).jpg",
 "/assets/images/properties/properties (35).jpg",
 "/assets/images/properties/properties (36).jpg",
+"/assets/images/properties/properties (37).jpg",
 "/assets/images/properties/properties (38).jpg",
 "/assets/images/properties/properties (39).jpg",
 "/assets/images/properties/properties (40).jpg",
@@ -46,6 +49,7 @@ export default function Properties() {
 "/assets/images/properties/properties (44).jpg",
 "/assets/images/properties/properties (45).jpg",
 "/assets/images/properties/properties (46).jpg",
+"/assets/images/properties/properties (47).jpg",
 "/assets/images/properties/properties (48).jpg",
   ]);
 
