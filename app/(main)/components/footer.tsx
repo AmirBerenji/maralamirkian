@@ -14,7 +14,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex items-center space-x-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/maralamirkian/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/10 hover:bg-white/20 active:bg-white/30 flex items-center justify-center transition-colors duration-300"
@@ -23,7 +23,7 @@ export default function Footer() {
                 <Instagram size={20} />
               </a>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/marooli"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white/10 hover:bg-white/20 active:bg-white/30 flex items-center justify-center transition-colors duration-300"
