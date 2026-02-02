@@ -40,12 +40,12 @@ export default function ContactPage() {
                             <p className="text-base sm:text-lg"><strong>Social Media:</strong></p>
                             <ul className="list-disc list-inside mt-2">
                                 <li>
-                                    <a href="https://instagram.com/maral.amirkian" target="_blank" rel="noopener noreferrer" className="text-[#67593d] hover:underline">
+                                    <a href="https://www.instagram.com/maralamirkian/" target="_blank" rel="noopener noreferrer" className="text-[#67593d] hover:underline">
                                         Instagram
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://facebook.com/maral.amirkian" target="_blank" rel="noopener noreferrer" className="text-[#67593d] hover:underline">
+                                    <a href="https://www.facebook.com/marooli" target="_blank" rel="noopener noreferrer" className="text-[#67593d] hover:underline">
                                         Facebook
                                     </a>
                                 </li>
