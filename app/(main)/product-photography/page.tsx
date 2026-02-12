@@ -20,6 +20,22 @@ export default function ProductPhotography() {
 "/assets/images/product/product (15).jpg",
 "/assets/images/product/product (16).jpg",
 "/assets/images/product/product (17).jpg",
+"/assets/images/product/product (18).jpg",
+"/assets/images/product/product (19).jpg",
+"/assets/images/product/product (20).jpg",
+"/assets/images/product/product (21).jpg",
+"/assets/images/product/product (22).jpg",
+"/assets/images/product/product (23).jpg",
+"/assets/images/product/product (24).jpg",
+"/assets/images/product/product (25).jpg",
+"/assets/images/product/product (26).jpg",
+"/assets/images/product/product (27).jpg",
+"/assets/images/product/product (28).jpg",
+"/assets/images/product/product (29).jpg",
+"/assets/images/product/product (30).jpg",
+"/assets/images/product/product (31).jpg",
+"/assets/images/product/product (32).jpg",
+"/assets/images/product/product (33).jpg",
   ]);
 
   return (
