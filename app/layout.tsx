@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Maral Amirkian",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.jpeg",
         width: 1200,
         height: 630,
         alt: "Maral Amirkian",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     title: "Maral Amirkian",
     description:
       "Official website of Maral Amirkian. Explore services and portfolio.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.jpeg"],
   },
 
   robots: {
